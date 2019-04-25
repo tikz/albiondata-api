@@ -17,14 +17,14 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 
 	"github.com/broderickhyman/albiondata-api/lib"
-	adslib "github.com/broderickhyman/albiondata-sql/lib"
+	adslib "github.com/tikz/albiondata-sql/lib"
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-	"golang.org/x/crypto/acme/autocert"
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"golang.org/x/crypto/acme/autocert"
 )
 
 var (
@@ -103,10 +103,10 @@ func apiHandleStatsPricesItemJson(c echo.Context) error {
 }
 
 func apiHandleStatsPricesView(c echo.Context) error {
-	results  := getStatsPricesItem(c)
+	results := getStatsPricesItem(c)
 
 	html :=
-`<html>
+		`<html>
 	<head>
 		<style>
 			table, th, td {
@@ -129,7 +129,7 @@ func apiHandleStatsPricesView(c echo.Context) error {
 				<th>buy_price_max</th>
 				<th>buy_price_max_date</th>
 			</tr>`
-	for _, result := range results  {
+	for _, result := range results {
 		html += "<tr>"
 		v := reflect.ValueOf(result)
 
@@ -140,7 +140,7 @@ func apiHandleStatsPricesView(c echo.Context) error {
 	}
 
 	html +=
-`		</table>
+		`		</table>
 	</body>
 </html>`
 
@@ -334,9 +334,9 @@ func doCmd(cmd *cobra.Command, args []string) {
 	e.HideBanner = true
 
 	// Cache certificates
-	if viper.GetBool("useHttps"){
+	if viper.GetBool("useHttps") {
 		e.Pre(middleware.HTTPSWWWRedirect())
- 		if viper.GetString("autoCertCacheDirectory") != "" {
+		if viper.GetString("autoCertCacheDirectory") != "" {
 			e.AutoTLSManager.Cache = autocert.DirCache(viper.GetString("autoCertCacheDirectory"))
 		}
 	}
@@ -350,7 +350,7 @@ func doCmd(cmd *cobra.Command, args []string) {
 	//Allow CORS
 	e.Use(middleware.CORS())
 
-	if viper.GetString("staticFilePrefix") != "" && viper.GetString("staticFolderPath") != ""{
+	if viper.GetString("staticFilePrefix") != "" && viper.GetString("staticFolderPath") != "" {
 		e.Static(viper.GetString("staticFilePrefix"), viper.GetString("staticFolderPath"))
 	} else {
 		e.GET("/", func(c echo.Context) error {
@@ -364,15 +364,14 @@ func doCmd(cmd *cobra.Command, args []string) {
 	e.GET("/api/v1/stats/gold", apiHandleStatsGold)
 
 	// Start server
-	if viper.GetBool("useHttps"){
-		go func(c *echo.Echo){
+	if viper.GetBool("useHttps") {
+		go func(c *echo.Echo) {
 			e.Logger.Fatal(e.Start(":80"))
 		}(e)
 		e.Logger.Fatal(e.StartAutoTLS(viper.GetString("listen")))
 	} else {
 		e.Logger.Fatal(e.Start(viper.GetString("listen")))
 	}
-
 
 	// END ECHO
 	//*******************************
