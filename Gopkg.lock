@@ -3,199 +3,327 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/broderickhyman/albiondata-sql"
+  digest = "1:542a349f2e161b118a856a12810fc24fa5fdb122bfa5e1541642d990f0e7bc9c"
+  name = "github.com/broderickhyman/albiondata-api"
   packages = ["lib"]
-  revision = "fbbea192146f4000a8105f0d76b2c60799f0a8b3"
+  pruneopts = ""
+  revision = "a4a6b84f2960ed7ec197ac4fa3015f7f4b1af44d"
 
 [[projects]]
   branch = "master"
+  digest = "1:de639b3e45c7bb5fda02ed302ffee1e1fba56a570c629d3f51b996b9f8a210c9"
   name = "github.com/denisenkom/go-mssqldb"
   packages = ["."]
+  pruneopts = ""
   revision = "8a15d1bb0c8eaa4b870c016b312de5b50b493b4e"
 
 [[projects]]
+  digest = "1:3e93e899f8457138a891b3ccedcacf8fe9074865c848f7028e1892bdae280676"
   name = "github.com/dgrijalva/jwt-go"
   packages = ["."]
+  pruneopts = ""
   revision = "dbeaa9332f19a944acb5736b4456cfcc02140e29"
   version = "v3.1.0"
 
 [[projects]]
+  digest = "1:9f1e571696860f2b4f8a241b43ce91c6085e7aaed849ccca53f590a4dc7b95bd"
   name = "github.com/fsnotify/fsnotify"
   packages = ["."]
+  pruneopts = ""
   revision = "629574ca2a5df945712d3079857300b5e4da0236"
   version = "v1.4.2"
 
 [[projects]]
+  digest = "1:24f8932912fd9331367d38715bb74be889dc2f94d401109c3aa3db8b3aa246c5"
   name = "github.com/go-sql-driver/mysql"
   packages = ["."]
+  pruneopts = ""
   revision = "a0583e0143b1624142adab07e0e97fe106d99561"
   version = "v1.3"
 
 [[projects]]
   branch = "master"
+  digest = "1:147d671753effde6d3bcd58fc74c1d67d740196c84c280c762a5417319499972"
   name = "github.com/hashicorp/hcl"
-  packages = [".","hcl/ast","hcl/parser","hcl/scanner","hcl/strconv","hcl/token","json/parser","json/scanner","json/token"]
+  packages = [
+    ".",
+    "hcl/ast",
+    "hcl/parser",
+    "hcl/scanner",
+    "hcl/strconv",
+    "hcl/token",
+    "json/parser",
+    "json/scanner",
+    "json/token",
+  ]
+  pruneopts = ""
   revision = "23c074d0eceb2b8a5bfdbb271ab780cde70f05a8"
 
 [[projects]]
+  digest = "1:870d441fe217b8e689d7949fef6e43efbc787e50f200cb1e70dbca9204a1d6be"
   name = "github.com/inconshreveable/mousetrap"
   packages = ["."]
+  pruneopts = ""
   revision = "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
   version = "v1.0"
 
 [[projects]]
+  branch = "master"
+  digest = "1:3b5334b3c0b7de214aca13eacc3c92b460b09e7847ae6079de56161e20ae5759"
   name = "github.com/jinzhu/gorm"
-  packages = [".","dialects/mssql","dialects/mysql","dialects/postgres","dialects/sqlite"]
-  revision = "5174cc5c242a728b435ea2be8a2f7f998e15429b"
-  version = "v1.0"
+  packages = [
+    ".",
+    "dialects/mssql",
+    "dialects/mysql",
+    "dialects/postgres",
+    "dialects/sqlite",
+  ]
+  pruneopts = ""
+  revision = "7bc35615034c1d6994088c2cc925086fba6f565e"
 
 [[projects]]
   branch = "master"
+  digest = "1:a0c0f06f12f4b83b89eec79114265c54e9e300b8ddda0f0f3fb49a685283fa6c"
   name = "github.com/jinzhu/inflection"
   packages = ["."]
+  pruneopts = ""
   revision = "1c35d901db3da928c72a72d8458480cc9ade058f"
 
 [[projects]]
+  digest = "1:ed156487a7c787f4a6d53585b1a87844291c839a5cbff149ea8b423e3d1a45a1"
   name = "github.com/labstack/echo"
-  packages = [".","middleware"]
+  packages = [
+    ".",
+    "middleware",
+  ]
+  pruneopts = ""
   revision = "0473c51f1dbd83487effce00702571d19033a6e5"
   version = "3.2.5"
 
 [[projects]]
+  digest = "1:8b892c6273cbc58834d83016abbc942bfec885b01e1a26db0955d7bec885f628"
   name = "github.com/labstack/gommon"
-  packages = ["bytes","color","log","random"]
+  packages = [
+    "bytes",
+    "color",
+    "log",
+    "random",
+  ]
+  pruneopts = ""
   revision = "57409ada9da0f2afad6664c49502f8c50fbd8476"
   version = "0.2.3"
 
 [[projects]]
   branch = "master"
+  digest = "1:3b5167b89f2203a949b71e29783418a0532531238ad36eb8610ec12e9c7b997f"
   name = "github.com/lib/pq"
-  packages = [".","hstore","oid"]
+  packages = [
+    ".",
+    "hstore",
+    "oid",
+  ]
+  pruneopts = ""
   revision = "83612a56d3dd153a94a629cd64925371c9adad78"
 
 [[projects]]
+  digest = "1:1ce378ab2352c756c6d7a0172c22ecbd387659d32712a4ce3bc474273309a5dc"
   name = "github.com/magiconair/properties"
   packages = ["."]
+  pruneopts = ""
   revision = "be5ece7dd465ab0765a9682137865547526d1dfb"
   version = "v1.7.3"
 
 [[projects]]
+  digest = "1:9ea83adf8e96d6304f394d40436f2eb44c1dc3250d223b74088cc253a6cd0a1c"
   name = "github.com/mattn/go-colorable"
   packages = ["."]
+  pruneopts = ""
   revision = "167de6bfdfba052fa6b2d3664c8f5272e23c9072"
   version = "v0.0.9"
 
 [[projects]]
+  digest = "1:78229b46ddb7434f881390029bd1af7661294af31f6802e0e1bedaad4ab0af3c"
   name = "github.com/mattn/go-isatty"
   packages = ["."]
+  pruneopts = ""
   revision = "0360b2af4f38e8d38c7fce2a9f4e702702d73a39"
   version = "v0.0.3"
 
 [[projects]]
+  digest = "1:2ae7bef8115e1538100c327f6be0e77c5d6ec1681c6f2779dcbde2a77afa2341"
   name = "github.com/mattn/go-sqlite3"
   packages = ["."]
+  pruneopts = ""
   revision = "ed69081a91fd053f17672236b0dd52ba7485e1a3"
   version = "v1.4.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:59d11e81d6fdd12a771321696bb22abdd9a94d26ac864787e98c9b419e428734"
   name = "github.com/mitchellh/go-homedir"
   packages = ["."]
+  pruneopts = ""
   revision = "b8bc1bf767474819792c23f32d8286a45736f1c6"
 
 [[projects]]
   branch = "master"
+  digest = "1:30a2adc78c422ebd23aac9cfece529954d5eacf9ddbe37345f2a17439f8fa849"
   name = "github.com/mitchellh/mapstructure"
   packages = ["."]
+  pruneopts = ""
   revision = "06020f85339e21b2478f756a78e295255ffa4d6a"
 
 [[projects]]
+  digest = "1:9c740db1f7015dffa093aa5c70862d277fe49f5e92b56ca5d0d69ef0e37c01db"
   name = "github.com/pelletier/go-toml"
   packages = ["."]
+  pruneopts = ""
   revision = "16398bac157da96aa88f98a2df640c7f32af1da2"
   version = "v1.0.1"
 
 [[projects]]
+  digest = "1:d1c1e5f4064b332bd90bba7bc2ab403c0afd7b36d34b7875877a45c78d24f5c1"
   name = "github.com/spf13/afero"
-  packages = [".","mem"]
+  packages = [
+    ".",
+    "mem",
+  ]
+  pruneopts = ""
   revision = "8d919cbe7e2627e417f3e45c3c0e489a5b7e2536"
   version = "v1.0.0"
 
 [[projects]]
+  digest = "1:6ff9b74bfea2625f805edec59395dc37e4a06458dd3c14e3372337e3d35a2ed6"
   name = "github.com/spf13/cast"
   packages = ["."]
+  pruneopts = ""
   revision = "acbeb36b902d72a7a4c18e8f3241075e7ab763e4"
   version = "v1.1.0"
 
 [[projects]]
+  digest = "1:2208a80fc3259291e43b30f42f844d18f4218036dff510f42c653ec9890d460a"
   name = "github.com/spf13/cobra"
   packages = ["."]
+  pruneopts = ""
   revision = "7b2c5ac9fc04fc5efafb60700713d4fa609b777b"
   version = "v0.0.1"
 
 [[projects]]
   branch = "master"
+  digest = "1:5cb42b990db5dc48b8bc23b6ee77b260713ba3244ca495cd1ed89533dc482a49"
   name = "github.com/spf13/jwalterweatherman"
   packages = ["."]
+  pruneopts = ""
   revision = "12bd96e66386c1960ab0f74ced1362f66f552f7b"
 
 [[projects]]
+  digest = "1:261bc565833ef4f02121450d74eb88d5ae4bd74bfe5d0e862cddb8550ec35000"
   name = "github.com/spf13/pflag"
   packages = ["."]
+  pruneopts = ""
   revision = "e57e3eeb33f795204c1ca35f56c44f83227c6e66"
   version = "v1.0.0"
 
 [[projects]]
+  digest = "1:59354ad53dfe6ed1b941844cb029cd37c0377598eec3a0d49c03aee2375ef9c4"
   name = "github.com/spf13/viper"
   packages = ["."]
+  pruneopts = ""
   revision = "25b30aa063fc18e48662b86996252eabdcf2f0c7"
   version = "v1.0.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:f5e4edfe3233320c50cab38c486c638a2701d445a47044aedd08bb93193e73d4"
+  name = "github.com/tikz/albiondata-sql"
+  packages = ["lib"]
+  pruneopts = ""
+  revision = "bb71cf777599c79864d778776ef5009f57ec0819"
+
+[[projects]]
+  branch = "master"
+  digest = "1:857a9ecd5cb13379ecc8f798f6e6b6b574c98b9355657d91e068275f1120aaf7"
   name = "github.com/valyala/bytebufferpool"
   packages = ["."]
+  pruneopts = ""
   revision = "e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7"
 
 [[projects]]
   branch = "master"
+  digest = "1:bf6f8915c0338e875383cb7fdebd58a4d360a232f461d9a029d7ccb12f90c5d7"
   name = "github.com/valyala/fasttemplate"
   packages = ["."]
+  pruneopts = ""
   revision = "dcecefd839c4193db0d35b88ec65b4c12d360ab0"
 
 [[projects]]
   branch = "master"
+  digest = "1:c3415eeb330bf30a2d8181e516ec79804c198f3d171ab9c9364f29dbe76c05d9"
   name = "golang.org/x/crypto"
-  packages = ["acme","acme/autocert","md4"]
+  packages = [
+    "acme",
+    "acme/autocert",
+    "md4",
+  ]
+  pruneopts = ""
   revision = "94eea52f7b742c7cbe0b03b22f0c4c8631ece122"
 
 [[projects]]
   branch = "master"
+  digest = "1:a9afbcb2b5dacde3889b77124be6abe68477a09c6da3df224cc74f5e180454e6"
   name = "golang.org/x/net"
   packages = ["context"]
+  pruneopts = ""
   revision = "d866cfc389cec985d6fda2859936a575a55a3ab6"
 
 [[projects]]
   branch = "master"
+  digest = "1:29b64cc0923d99460685a69a45fab416cd7d6ee3150c5d6e79ee0d5f5c607e22"
   name = "golang.org/x/sys"
   packages = ["unix"]
+  pruneopts = ""
   revision = "1d2aa6dbdea45adaaebb9905d0666e4537563829"
 
 [[projects]]
   branch = "master"
+  digest = "1:5acd3512b047305d49e8763eef7ba423901e85d5dd2fd1e71778a0ea8de10bd4"
   name = "golang.org/x/text"
-  packages = ["internal/gen","internal/triegen","internal/ucd","transform","unicode/cldr","unicode/norm"]
+  packages = [
+    "internal/gen",
+    "internal/triegen",
+    "internal/ucd",
+    "transform",
+    "unicode/cldr",
+    "unicode/norm",
+  ]
+  pruneopts = ""
   revision = "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
 
 [[projects]]
   branch = "v2"
+  digest = "1:f769ed60e075e4221612c2f4162fccc9d3795ef358fa463425e3b3d7a5debb27"
   name = "gopkg.in/yaml.v2"
   packages = ["."]
+  pruneopts = ""
   revision = "287cf08546ab5e7e37d55a84f7ed3fd1db036de5"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "3206dbd0808d05546a53fa729030863335403d50c86bc30469fbc9a047f9f73e"
+  input-imports = [
+    "github.com/broderickhyman/albiondata-api/lib",
+    "github.com/jinzhu/gorm",
+    "github.com/jinzhu/gorm/dialects/mssql",
+    "github.com/jinzhu/gorm/dialects/mysql",
+    "github.com/jinzhu/gorm/dialects/postgres",
+    "github.com/jinzhu/gorm/dialects/sqlite",
+    "github.com/labstack/echo",
+    "github.com/labstack/echo/middleware",
+    "github.com/mitchellh/go-homedir",
+    "github.com/spf13/cobra",
+    "github.com/spf13/viper",
+    "github.com/tikz/albiondata-sql/lib",
+    "golang.org/x/crypto/acme/autocert",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1

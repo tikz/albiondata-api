@@ -322,7 +322,7 @@ func doCmd(cmd *cobra.Command, args []string) {
 	}
 
 	// Debug
-	// db.LogMode(true)
+	db.LogMode(true)
 
 	defer db.Close()
 	// END DB
